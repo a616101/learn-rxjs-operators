@@ -75,6 +75,7 @@
         * [concatMapTo](/operators/transformation/concatmapto.md)
         * [exhaustMap](/operators/transformation/exhaustmap.md)
         * [expand](/operators/transformation/expand.md)
+        * [exhaustMap](/operators/tranformation/exhaustmap.md)
         * [groupBy](/operators/transformation/groupby.md)
         * [map](/operators/transformation/map.md)
         * [mapTo](/operators/transformation/mapto.md)
