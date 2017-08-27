@@ -4,13 +4,9 @@
 
 ## 映射成内部 observable，忽略其他值直到该 observable 完成。
 
-<<<<<<< HEAD
-### Examples
-=======
 ---
 
 ### 示例
->>>>>>> docs(exhaustMap): translate operator exhaustMap.md<100%>
 
 ##### 示例 1: 使用 interval 的 exhaustMap 
 
@@ -43,10 +39,7 @@ const exhaustSub = Rx.Observable
   .subscribe(val => console.log(val))
 ```
 
-### 其他资源
-
-<<<<<<< HEAD
-##### Example 2: Another exhaustMap with interval
+##### 示例 2: 另一个使用 interval 的 exhaustMap 
 
 ( [jsBin](http://jsbin.com/fizuduzuti/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/5ck8yg5k/3/) )
 
@@ -58,12 +51,12 @@ const exhaustSub = firstInterval
 .do(i => console.log(`Emission of first interval: ${i}`))
 .exhaustMap(f => secondInterval)
 /*
-  When we subscribed to the first interval, it starts to emit a values (startinng 0).
-  This value is mapped to the second interval which then begins to emit (starting 0).  
-  While the second interval is active, values from the first interval are ignored.
-  We can see this when firstInterval emits number 3,6, and so on...
+  当我们订阅第一个 interval 时，它开始发出值(从0开始)。
+  这个值会映射成第二个 interval，然后它开始发出值(从0开始)。
+  当第二个 interval 出于激活状态时，第一个 interval 的值会被忽略。
+  我们可以看到 firstInterval 发出的数字为3，6，等等...
   
-    Output:
+    输出:
     Emission of first interval: 0
     0
     1
@@ -81,11 +74,9 @@ const exhaustSub = firstInterval
 ```
 
 
-### Additional Resources
-* [exhaustMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-exhaustMap) :newspaper: - Official docs
-=======
+### 其他资源
+
 * [exhaustMap](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-exhaustMap) :newspaper: - 官方文档
->>>>>>> docs(exhaustMap): translate operator exhaustMap.md<100%>
 
 ---
 > :file_folder: 源码:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/exhaustMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/exhaustMap.ts)
